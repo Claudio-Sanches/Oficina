@@ -2,14 +2,15 @@
 
 ## Contexto do Projeto
 
-Sistema de controle e gerenciamento de execução de ordens de serviço em uma oficina mecânica.
-Clientes levam veículos à oficina mecânica para serem consertados ou para passarem por revisões periódicas.
-Cada veículo é designado a uma equipe de mecânicos que identifica os serviços a serem executados e preenche uma OS com data de entrega.
-A partir da OS, calcula-se o valor de cada serviço, consultando-se uma tabela de referência de mão-de-obra.
-O valor de cada peça também irá compor a OS. O cliente autoriza a execução dos serviços.
-A mesma equipe avalia e executa os serviços.
-Os mecânicos possuem código, nome, endereço e especialidade.
-Cada OS possui: número, data de emissão, um valor, status e uma data para conclusão dos trabalhos.
+ - Sistema de controle e gerenciamento de execução de ordens de serviço em uma oficina mecânica.
+ - Clientes levam veículos à oficina mecânica para serem consertados ou para passarem por revisões periódicas.
+ - Cada veículo é designado a uma equipe de mecânicos que identifica os serviços a serem executados e preenche uma OS com data de entrega.
+ - A partir da OS, calcula-se o valor de cada serviço, consultando-se uma tabela de referência de mão-de-obra.
+ - O valor de cada peça também irá compor a OS.
+ - O cliente autoriza a execução dos serviços.
+ - A mesma equipe avalia e executa os serviços.
+ - Os mecânicos possuem código, nome, endereço e especialidade.
+ - Cada OS possui: número, data de emissão, um valor, status e uma data para conclusão dos trabalhos.
 
 Este projeto apresenta o modelo relacional de um sistema para gerenciamento de uma oficina mecânica, incluindo scripts SQL, diagrama visual e documentação DBML.
 
@@ -50,14 +51,14 @@ Este projeto apresenta o modelo relacional de um sistema para gerenciamento de u
 
 ## Project Context
 
-System for controlling and managing the execution of work orders in a mechanical workshop.
-Customers bring vehicles to the workshop for repairs or periodic maintenance.
-Each vehicle is assigned to a team of mechanics who identify the services to be performed and fill out a work order (OS) with a delivery date.
-From the work order, the value of each service is calculated by consulting a labor reference table.
-The value of each part also composes the work order. The customer authorizes the execution of the services.
-The same team evaluates and performs the services.
-Mechanics have code, name, address, and specialty.
-Each work order has: number, issue date, value, status, and a completion date.
+ - System for controlling and managing the execution of work orders in a mechanical workshop.
+ - Customers bring vehicles to the workshop for repairs or periodic maintenance.
+ - Each vehicle is assigned to a team of mechanics who identify the services to be performed and fill out a work order (OS) with a delivery date.
+ - From the work order, the value of each service is calculated by consulting a labor reference table.
+ - The value of each part also composes the work order. The customer authorizes the execution of the services.
+ - The same team evaluates and performs the services.
+ - Mechanics have code, name, address, and specialty.
+ - Each work order has: number, issue date, value, status, and a completion date.
 
 This project presents the relational model of a system for managing a mechanical workshop, including SQL scripts, visual diagram, and DBML documentation.
 
