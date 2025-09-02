@@ -1,0 +1,65 @@
+Table Cliente {
+  id_cliente int [pk, increment]
+  nome varchar
+  telefone varchar
+  endereco varchar
+}
+
+Table Veiculo {
+  id_veiculo int [pk, increment]
+  placa varchar
+  modelo varchar
+  ano int
+  id_cliente int [ref: > Cliente.id_cliente]
+}
+
+Table Equipe {
+  id_equipe int [pk, increment]
+  nome varchar
+}
+
+Table Mecanico {
+  id_mecanico int [pk, increment]
+  nome varchar
+  endereco varchar
+  especialidade varchar
+  id_equipe int [ref: > Equipe.id_equipe]
+}
+
+Table Servico {
+  id_servico int [pk, increment]
+  descricao varchar
+  valor_mao_obra decimal
+}
+
+Table Peca {
+  id_peca int [pk, increment]
+  nome varchar
+  valor decimal
+}
+
+Table OrdemServico {
+  id_os int [pk, increment]
+  numero varchar
+  data_emissao date
+  valor_total decimal
+  status varchar
+  data_conclusao date
+  id_veiculo int [ref: > Veiculo.id_veiculo]
+  id_equipe int [ref: > Equipe.id_equipe]
+  autorizado boolean
+}
+
+Table ItemServico {
+  id_item_servico int [pk, increment]
+  id_os int [ref: > OrdemServico.id_os]
+  id_servico int [ref: > Servico.id_servico]
+  quantidade int
+}
+
+Table ItemPeca {
+  id_item_peca int [pk, increment]
+  id_os int [ref: > OrdemServico.id_os]
+  id_peca int [ref: > Peca.id_peca]
+  quantidade int
+}
