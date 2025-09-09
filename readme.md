@@ -44,9 +44,9 @@ Este projeto apresenta o modelo relacional de um sistema para gerenciamento de u
 3. Consulte o arquivo `modelo_oficina.dbml` para documentação e geração de diagramas em outras ferramentas.
 4. Veja o diagrama visual em `Projeto oficina.png`.
 
-## English Version 
+> By CBS construido no VScode com auxílio do Copilot
 
-# Workshop Project - Database Model
+# Workshop Project - Database Model (English Versio)
 
 ## Project Context
 
@@ -105,3 +105,4 @@ This project presents the relational model of a system for managing a mechanical
 3. Check the `modelo_oficina.dbml` file for documentation and diagram generation in other tools.
 4. View the visual diagram in `Projeto oficina.png`.
 
+> by CBS built in VSCode with Copilot assistance
